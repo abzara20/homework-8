@@ -1,0 +1,16 @@
+.userButton {
+  width: 127.66px;
+  height: 42.01px;
+  background-color: $yellow;
+  border-radius: 25px;
+  text-align: center;
+  border: none;
+
+  font-family: caveat;
+  font-size: 20px;
+
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 0px 0px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.view {
+  position: absolute;
+}

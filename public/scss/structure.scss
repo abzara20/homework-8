@@ -1,0 +1,78 @@
+// import fonts for project
+@font-face {
+  font-family: Caveat;
+  src: url(../css/fonts/Caveat-Regular.ttf);
+}
+
+@font-face {
+  font-family: Caveat-bold;
+  src: url(../css/fonts/Caveat-Bold.ttf);
+}
+@font-face {
+  font-family: Gill;
+  src: url(../css/fonts/GillSans.ttf);
+}
+@font-face {
+  font-family: Gill-light;
+  src: url(../css/fonts/GillSans-Light.ttf);
+}
+@font-face {
+  font-family: Lato;
+  src: url(../css/fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: Lato-light;
+  src: url(../css/fonts/Lato-Light.ttf);
+}
+@font-face {
+  font-family: Lato-italic;
+  src: url(../css/fonts/Lato-Italic.ttf);
+}
+@font-face {
+  font-family: Lato-black;
+  src: url(../css/fonts/Lato-Black.ttf);
+}
+
+// html reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+#content {
+  min-height: calc(100vh - 165px);
+  // padding-top: 90px;
+  width: 100%;
+}
+
+.button {
+  height: 52px;
+  background-color: $yellow;
+  padding: 0;
+  height: 52px;
+  line-height: 52px;
+  width: 158px;
+
+  text-align: center;
+  margin-bottom: 0;
+  border-radius: 25px;
+  border: none;
+
+  font-family: Caveat;
+  font-size: 25px;
+  box-shadow: $shadow-1, $shadow-2;
+}

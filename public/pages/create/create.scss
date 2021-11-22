@@ -1,0 +1,132 @@
+.create {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  max-width: 981px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+  .form-header {
+    width: 100%;
+    margin: 80px 0 46px 0;
+    h4 {
+      font-family: Caveat;
+      font-weight: lighter;
+      font-size: 25px;
+    }
+  }
+  .form {
+    width: 100%;
+
+    &__section {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      position: relative;
+      margin-bottom: 60px;
+      .image-input {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+        border-bottom: 2px solid rgb(0, 0, 0);
+        margin-bottom: 70px;
+        p {
+          margin: 0;
+
+          font-family: Lato-light;
+          font-size: 20px;
+        }
+      }
+      input {
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid black;
+
+        font-family: Lato-light;
+        font-size: 20px;
+        margin-bottom: 70px;
+      }
+      .btn {
+        background-color: $dpink;
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        font-family: "Gill Sans";
+        font-size: 20px;
+        cursor: pointer;
+        position: absolute;
+        bottom: 75px;
+        right: 0;
+      }
+    }
+  }
+  .formButton {
+    position: relative;
+    background-color: $dpink;
+    border-radius: 25px;
+    font-family: Caveat;
+    border: none;
+    z-index: 10;
+  }
+  .formImage {
+    appearance: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+  }
+
+  .commit {
+    font-size: 25px;
+    width: 422px;
+    height: 52px;
+    margin-bottom: 130px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .create {
+    padding: 0 130px;
+    .form {
+      .image-input {
+        p {
+          font-size: 16px;
+        }
+      }
+      input {
+        font-size: 16px;
+      }
+    }
+    .commit {
+      width: 354px;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .create {
+    padding: 0 38px;
+    .form {
+      &__section {
+        .image-input {
+          p {
+            font-size: 12px;
+          }
+        }
+        input {
+          font-size: 12px;
+        }
+      }
+    }
+    .commit {
+      width: 283px;
+    }
+  }
+}

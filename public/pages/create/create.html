@@ -1,0 +1,39 @@
+<div class="create">
+  <div class="form-header"></div>
+  <div class="form">
+    <div class="form__section">
+      <div class="image-input">
+        <p>Add Recipe Image</p>
+        <select name="" class="formButton formImage">
+          <option value="Attach Me">Attach Me</option>
+          <option value="sweet">Dessert</option>
+          <option value="meal">Meal</option>
+          <option value="drink">Drink</option>
+        </select>
+      </div>
+      <input class="recipeName" placeholder="Recipe Name" type="text" />
+      <input class="recipeDesc" placeholder="Recipe Description" type="text" />
+      <input class="recipeTime" placeholder="Recipe Total Time" type="text" />
+      <input class="recipeSize" placeholder="Recipe Serving Size" type="text" />
+    </div>
+
+    <div class="form__section ingredients">
+      <input id="ind1" type="text" placeholder="Ingredient #1" />
+      <input id="ind2" type="text" placeholder="Ingredient #2" />
+      <input id="ind3" type="text" placeholder="Ingredient #3" />
+      <div class="btn" onclick="addIngred(event)">+</div>
+    </div>
+    <div class="form__section instructions">
+      <input id="ins1" type="text" placeholder="Instructions #1" />
+      <input id="ins2" type="text" placeholder="Instructions #2" />
+      <input id="ins3" type="text" placeholder="Instructions #3" />
+      <div class="btn" onclick="addInstruct(event)">+</div>
+    </div>
+  </div>
+
+  <div class="form__section">
+    <button class="formButton commit" onclick="createRecipe()">
+      Create Recipe
+    </button>
+  </div>
+</div>

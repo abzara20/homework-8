@@ -1,0 +1,81 @@
+.loginPg {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .half {
+    padding-top: 93px;
+    width: 206.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 120px;
+    margin-bottom: 114px;
+
+    .header {
+      width: 100%;
+      font-family: Lato;
+      h4 {
+        font-family: Lato-italic;
+        font-weight: lighter;
+        font-size: 12px;
+        margin-bottom: 0;
+      }
+      h1 {
+        font-size: 30px;
+        margin-bottom: 60px;
+      }
+    }
+
+    .form {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      position: relative;
+
+      z-index: 20;
+      input {
+        font-size: 12px;
+        font-family: Lato;
+        margin-bottom: 51.5px;
+        width: 206.5px;
+        background: none;
+        border: none;
+        border-bottom: 3px solid black;
+      }
+      input::placeholder {
+        color: black;
+      }
+      .button {
+        font-family: Caveat;
+        font-size: 25px;
+
+        min-width: 200px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .loginPg {
+    flex-direction: column;
+
+    #signUp {
+      padding-top: 0;
+      padding-bottom: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .loginPg {
+    padding-bottom: 81px;
+    #signUp {
+      padding-bottom: 0;
+    }
+  }
+}
